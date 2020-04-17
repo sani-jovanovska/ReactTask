@@ -1,0 +1,263 @@
+html, html body {
+  padding: 0;
+  margin: 0;
+  color: #222;
+  font-size: 16px;
+  font-family: "Helvetica", "Roboto", "Arial", sans-serif;
+  min-height: 100%;
+  
+}
+
+#root .main {
+  padding: 30px;
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cec8c8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#root .main .main-page {
+  padding: 10px;
+  background-color: #eaeaea9c;
+  box-shadow: 3px 8px 9px 0px #bbbbbb;
+  border-radius: 10px;
+}
+
+#root .main .card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#root .main .card-holder .card {
+  flex: 1;
+  padding: 10px;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 3px 8px 9px 0px #bbbbbb;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  min-width: 200px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#root .main .card-holder .card:hover {
+  box-shadow: 3px 8px 9px 6px #bbbbbb;
+}
+
+
+#root .main .card-holder .card .img-holder {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#root .main .card-holder .card .img-holder a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#root .main .card-holder .card .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 3px 1px 4px 0px #c1c1c1;
+}
+
+#root .main .card-holder .card .card-name {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+#root .main .card-holder .card .card-name h2 {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #daa8c82e;
+  box-shadow: 3px 1px 4px 0px #c1c1c1;
+  border-radius: 10px;
+}
+/*
+#root .main .card-holder .card .card-name h2::before{
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c1c1c1;
+  border-radius: 15px;
+}*/
+
+#root .main .card-holder .card .card-ingred {
+  display: block;
+  margin-bottom: 20px;
+  text-align: right;
+  padding-bottom: 5px;
+  box-shadow: 3px 1px 4px 0px #c1c1c1;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 122px;
+}
+
+#root .main .card-holder .card .delete-button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: unset;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #7b5e71;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px #c1c1c1;
+}
+
+#root .main .card-holder .card .delete-button:hover,
+#root .main .card-holder .card .delete-button:focus {
+  background-color: #7b5e71;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+#root .main .card-holder .card .card-ingred .ingred-holder button {
+  margin: 0;
+  padding: 5px;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: #a93ca5;
+  width: 100%;
+  cursor: pointer;
+  text-align: right;
+}
+
+#root .main .card-holder .card .card-ingred .ingred-holder button:hover {
+  color: #9c27b0;
+}
+
+#root .main .card-holder .card .card-ingred .inline {
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+#root .main .card-holder .card .card-ingred h3 {
+  margin: 0;
+  font-size: 16px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+#root .main .card-holder .card .card-ingred h3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e8c9d0;
+  border-radius: 15px;
+}
+
+#root .main .main-page .card-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#root .main .main-page .card-header button {
+  background-color: #7b5e71;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px #c1c1c1;
+  
+}
+#root .main .main-page .card-header button:hover {
+  opacity: 1;
+}
+
+#root .main .main-page .card-header h2 {
+  margin: 0;
+}
+
+#root .main .product-details {
+  padding: 30px;
+  background-color: #eaeaea9c;
+  box-shadow: 3px 8px 9px 0px #bbbbbb;
+  border-radius: 10px;
+}
+
+#root .main .product .back-btn {
+  margin-bottom: 20px;
+  padding: 10px 5px;
+}
+
+#root .main .product .back-btn a {
+  background-color: #7b5e71;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 0px #c1c1c1;
+    padding: 10px;
+}
+
+#root .main .product .back-btn a:hover,
+#root .main .product .back-btn a:focus {
+  opacity: 1;
+  transition: .4s;
+}
+
+#root .main .product-details .img-holder {
+  margin-bottom: 20px;
+}
+
+#root .main .product-details .img-holder img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 3px 8px 9px 0px #bbbbbb;
+}
+
+#root .main .product .description {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 8px 9px 0px #bbbbbb;
+  background-color: rgb(251, 251, 251);
+}
+
+#root .main .product .description h2 {
+  margin: 0;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+#root .main .product .description .prep-time {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#root .main .product .description .instructions strong {
+  display: block;
+  margin-bottom: 5px;
+}
